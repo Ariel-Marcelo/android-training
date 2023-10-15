@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MenuTraining">
+    <Button
+        android:id="@+id/btn_app1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/my_light_primary"
+        android:layout_margin="10dp"
+        android:text="@string/app_1"
+        android:fontFamily="sans-serif">
+
+    </Button>
+    <Button
+        android:id="@+id/btn_app2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/my_light_primary"
+        android:layout_margin="10dp"
+        android:text="@string/app_2"
+        android:fontFamily="sans-serif">
+
+    </Button>
+    <Button
+        android:id="@+id/btn_app3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/my_light_primary"
+        android:layout_margin="10dp"
+        android:text="@string/app_3"
+        android:fontFamily="sans-serif">
+
+    </Button>
+    <Button
+        android:id="@+id/btn_app4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/my_light_primary"
+        android:layout_margin="10dp"
+        android:text="@string/app_4"
+        android:fontFamily="sans-serif">
+
+    </Button>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

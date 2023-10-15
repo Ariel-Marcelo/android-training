@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android Training</string>
+    <string name="app_1">Fit Calculator</string>
+    <string name="app_2">App #2</string>
+    <string name="app_3">App #3</string>
+    <string name="app_4">App #4</string>
+    <string name="txt_male">Male</string>
+</resources>
