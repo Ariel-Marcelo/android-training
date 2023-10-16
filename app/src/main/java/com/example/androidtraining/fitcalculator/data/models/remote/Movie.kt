@@ -1,4 +1,4 @@
-package com.example.androidtraining.fitcalculator.data.models
+package com.example.androidtraining.fitcalculator.data.models.remote
 
 data class Movie(
     val adult: Boolean,

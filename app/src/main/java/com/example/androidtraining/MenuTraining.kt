@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.example.androidtraining.fitcalculator.view.FitCalculator
+import com.example.androidtraining.fitcalculator.view.MovieApp
 
 class MenuTraining : AppCompatActivity() {
 
@@ -23,7 +23,7 @@ class MenuTraining : AppCompatActivity() {
 
     private fun initUi() {
         btnApp1.setOnClickListener {
-            val intent = Intent(this, FitCalculator::class.java)
+            val intent = Intent(this, MovieApp::class.java)
             startActivity(intent)
         }
     }

@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fitcalculator.view.FitCalculator">
+    tools:context=".fitcalculator.view.MovieApp">
+
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card_male"
+        android:id="@+id/card_popular"
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_margin="10dp"
         android:outlineAmbientShadowColor="@color/black"
         app:cardCornerRadius="20dp"
-        app:layout_constraintEnd_toStartOf="@id/card_female"
+        app:layout_constraintEnd_toStartOf="@id/card_upcoming"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -27,14 +28,14 @@
                 android:id="@+id/img_male"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:src="@drawable/ic_male"
+                android:src="@drawable/ic_popular"
                 app:tint="@color/blue"></ImageView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="@string/txt_male" />
+                android:text="@string/txt_popular" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -42,13 +43,13 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card_female"
+        android:id="@+id/card_upcoming"
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_margin="10dp"
         app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/card_male"
+        app:layout_constraintStart_toEndOf="@id/card_popular"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -61,14 +62,14 @@
                 android:id="@+id/img_female"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:src="@drawable/ic_female"
+                android:src="@drawable/ic_new"
                 app:tint="@color/female"></ImageView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="Female" />
+                android:text="Upcoming" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -76,12 +77,15 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/super_hero_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/rv_movie_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        android:layout_marginBottom="50pt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/card_male"
-        ></androidx.recyclerview.widget.RecyclerView>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_popular">
+    </androidx.recyclerview.widget.RecyclerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
